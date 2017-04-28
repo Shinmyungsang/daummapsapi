@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   root 'places#index'
-  get 'places/index'
-  get 'places/show'
+  resources :places, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

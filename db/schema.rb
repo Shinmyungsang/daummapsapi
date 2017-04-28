@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(version: 20170428151119) do
 
   create_table "places", force: :cascade do |t|
     t.string   "name"
-    t.integer  "iat"
-    t.integer  "ing"
+    t.integer  "lat"
+    t.integer  "lng"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
